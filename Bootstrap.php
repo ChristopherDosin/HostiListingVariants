@@ -1,10 +1,5 @@
 <?php
 
-use ShopwarePlugins\HostiListingVariants\Bootstrap\Install,
-    ShopwarePlugins\HostiListingVariants\Bootstrap\Update,
-    ShopwarePlugins\HostiListingVariants\Bootstrap\Uninstall,
-    ShopwarePlugins\HostiListingVariants\Subscriber;
-
 /**
  * @link https://shopwareianer.com/
  * @copyright Copyright (c) 2017, Christopher Dosin
@@ -13,6 +8,12 @@ use ShopwarePlugins\HostiListingVariants\Bootstrap\Install,
  * @subpackage HostiListingVariants
  * @version 1.0.10 / 2017-02-22
  */
+
+use ShopwarePlugins\HostiListingVariants\Bootstrap\Install;
+use ShopwarePlugins\HostiListingVariants\Bootstrap\Update;
+use ShopwarePlugins\HostiListingVariants\Bootstrap\Uninstall;
+use ShopwarePlugins\HostiListingVariants\Subscriber;
+
 class Shopware_Plugins_Frontend_HostiListingVariants_Bootstrap extends Shopware_Components_Plugin_Bootstrap {
 
     /**
