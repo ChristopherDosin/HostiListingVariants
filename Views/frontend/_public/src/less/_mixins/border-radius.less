@@ -1,0 +1,52 @@
+/*
+Border-radius mixin
+=============================================
+The mixins provides you a cross-browser compatible method to set a border-radius.
+
+Please refer to <http://caniuse.com/border-radius> to see the browser support table of the feature.
+
+`@param {String} radius The radius you want to set`
+*/
+
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -khtml-border-radius: @radius; 
+    -o-border-radius: @radius; 
+    -ms-border-radius: @radius;
+    -icab-border-radius: @radius; 
+    border-radius: @radius; 
+    // Prevent the background color leaks out
+    background-clip: padding-box;
+}
+
+.border-radius-circle(@radius: 50%) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -khtml-border-radius: @radius; 
+    -o-border-radius: @radius; 
+    -ms-border-radius: @radius;
+    -icab-border-radius: @radius; 
+    border-radius: @radius; 
+    // Prevent the background color leaks out
+    background-clip: padding-box;
+}
+.border-radius-multi(@leftTop: 0, @rightTop:0, @rightBottom: 0, @leftBottom: 0) {
+    border-top-left-radius: @leftTop;
+    border-top-right-radius:  @rightTop;
+    border-bottom-right-radius: @rightBottom;
+    border-bottom-left-radius: @leftBottom;
+    // Prevent the background color leaks out
+    background-clip: padding-box;
+}
+.reset-border-radius() {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0; 
+    -o-border-radius: 0; 
+    -ms-border-radius: 0;
+    -icab-border-radius: 0; 
+    border-radius: 0; 
+}

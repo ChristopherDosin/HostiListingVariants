@@ -1,0 +1,72 @@
+.width(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, width);
+}
+.min-width(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, min-width);
+}
+.max-width(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, max-width);
+}
+.height(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, height);
+}
+.min-height(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, min-height);
+}
+.max-height(@value, @baseValue: 16) {
+    .unitize(@value, @baseValue, max-height);
+}
+
+.font-size(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,font-size);
+}
+
+.line-height(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,line-height);
+}
+
+
+.margin(@topValue, @rightValue, @bottomValue: @topValue, @leftValue: @rightValue, @baseValue: 16) {
+  .unitize-multiple(@topValue, @rightValue, @bottomValue, @leftValue, @baseValue, margin);
+}
+.margin-top(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,margin-top);
+}
+.margin-bottom(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,margin-bottom);
+}
+.margin-left(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,margin-left);
+}
+.margin-right(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,margin-right);
+}
+
+.padding(@topValue, @rightValue, @bottomValue: @topValue, @leftValue: @rightValue, @baseValue: 16) {
+  .unitize-multiple(@topValue, @rightValue, @bottomValue, @leftValue, @baseValue, padding);
+}
+.padding-top(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,padding-top);
+}
+.padding-bottom(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,padding-bottom);
+}
+.padding-left(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,padding-left);
+}
+.padding-right(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,padding-right);
+}
+
+.top(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,top);
+}
+.bottom(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,bottom);
+}
+.left(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,left);
+}
+.right(@value, @baseValue: 16){
+    .unitize(@value, @baseValue,right);
+}
